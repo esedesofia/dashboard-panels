@@ -1,3 +1,9 @@
+import Navigation from "./components/Navigation";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <main>
+      <Navigation />
+    </main>
+  );
 }
