@@ -1,7 +1,9 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 
 function GraphData({ panel, handleAngleChange }) {
+  // Array de fechas de energyGenerated de cada panel
   const labels = panel.energyGenerated.map((entry) => entry.date);
+  // Array de watts de energyGenerated de cada panel
   const values = panel.energyGenerated.map((entry) => entry.watts);
 
   return (
